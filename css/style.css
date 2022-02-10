@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img{
+    width: 250px;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+}
+
+#nav {
+list-style:none inside;
+margin:0;
+margin-left:120px;
+padding:0;
+text-align:center;
+}
+
+#nav li {
+display:block;
+position:relative;
+float:left;
+background: #FF5757; /* menu background color */
+border-right:1px solid white;
+}
+#nav li a {
+display:block;
+padding:0;
+text-decoration:none;
+width:150px; /* this is the width of the menu items */
+line-height:30px; /* this is the hieght of the menu items */
+color:#ffffff; /* list item font color */
+letter-spacing: 1px;
+font-size: 15px;
+}
+#nav li li a {font-size:13px;} /* smaller font size for sub menu items */
+#nav li:hover {background:#000000d2;} /* highlights current hovered list item and the parent list items when hovering over sub menues */
+#nav ul {
+position:absolute;
+padding:0;
+left:0;
+display:none; /* hides sublists */
+}
+#nav li:hover ul ul {display:none;} /* hides sub-sublists */
+#nav li:hover ul {display:block;} /* shows sublist on hover */
+#nav li li:hover ul {
+display:block; /* shows sub-sublist on hover */
+margin-left:200px; /* this should be the same width as the parent list item */
+margin-top:-35px; /* aligns top of sub menu with top of list item */
+
+}
+.navbar{
+    border-bottom: 2px solid black ;
+}
+
+.container{
+    max-width: 1250px;
+    margin:20px auto;
+    padding-left:25px;
+    padding-right:25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis:50%;
+    min-width: 300px;
+}
+.col-2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px; 
+    background:#000000;
+    color: #fff;
+    border-radius: 30px;
+    margin-top:25px;
+    transition:background 0.5s;
+}
+.col-2 a:hover{
+    background:#FF5757;
+    color: rgb(2, 2, 2);
+
+}
+.col-2 img{
+    width:100%;
+    padding:150px 0;
+    
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+p{
+    color:#FF5757;
+}
+.header-section{
+    margin-top: -20px;
+    background: radial-gradient(#fff,#eaf2fb);
+}
+
+/* Style de la section categories*/
+
+.categories-parent{
+    margin: 0;
+    padding:10px;
+    background: linear-gradient(180deg, rgba(255,237,237,1) 0%, rgba(233,255,252,1) 100%);
+}
+.categories{
+    margin:70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 200px;
+    margin:auto;
+}
+.col-3 img{
+    width:100%;
+    border: 1px solid black;
+}
+
+.container h2{
+    text-align:center;
+    font-size: 2.2rem;
+    color: #000000;
+    margin: 50px 0;
+}
+
+/*section meilleurs produits*/
+.col-4{
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 15px;
+}
+.col-4 img{
+    width:100%;
+    border: 1px solid black;
+}
+
+footer{
+    margin: 0; 
+    padding: 40px;
+    height:400px;
+    background-color: rgb(31, 31, 31);
+}
+footer p {
+    font-size: 13px;
+    color:white;  
+}
+
+.col-51{
+    flex-basis: 50%; 
+    min-width: 200px;
+    padding: 15px;
+}
+.col-51 img{
+    width:250px
+}
